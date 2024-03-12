@@ -1,0 +1,15 @@
+:root {
+    --Bright-Blue: hsl(220, 98%, 61%);
+    --Check-Background: #57ddff to #c058f3;
+    --Very-Light-Gray: hsl(233, 14%, 35%);
+    --Very-Light-Grayish-Blue: hsl(234, 39%, 85%);
+    --Light-Grayish-Blue: hsl(234, 11%, 52%);
+    --Dark-Grayish-Blue: hsl(233, 14%, 35%);
+    --Very-Dark-Grayish-Blue: hsl(235, 21%, 11%);
+}
+body{
+    background-color: var(--Very-Light-Gray);
+}
+.item-todo-text,.menu button,.add-todo input::placeholder {
+    color:var(--Very-Light-Grayish-Blue) ;
+}

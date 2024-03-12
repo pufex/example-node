@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./thema-light.css" id="thema">
+  <title> Todo app</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <h1>Todo</h1>
+      </div>
+      <div class="thema">
+        <button>🌙</button>
+      </div>
+
+    </header>
+    <main>
+      <div class="add-todo ">
+        <div class="check0"></div>
+        <form action="" method="">
+          <input type="text" name="todo" placeholder="Add todo">
+          <button type="submit">Add</button>
+        </form>
+      </div>
+      <div class="wrapper"></div>
+      <div class="menu">
+        <button id="length" class="menu-item"></button>
+        <button id="all" class="menu-item">All</button>
+        <button id="active" class="menu-item">Active</button>
+        <button id="completed" class="menu-item">Completed</button>
+        <button id="clear" class="menu-item">Clear Completed</button>
+      </div>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+  <script src="./Sortable.js"></script>
+  <script>
+    new Sortable(wrapper, {
+      animation: 200,
+    })
+  </script>
+
+</body>
+
+</html>
